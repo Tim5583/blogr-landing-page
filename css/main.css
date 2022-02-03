@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 2rem 0;
+  margin: auto;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.logo {
+  width: 70px;
+}
+
+.btn {
+  padding: .8em 1em;
+  border-radius: 25px;
+  border: none;
+  width: 140px;
+}
+
+.header {
+  background-image: url(../images/bg-pattern-intro-mobile.svg), -webkit-linear-gradient(-30deg, #ff8f70, #ff3d54);
+  background-position: 30% 30% , 0 0;
+  background-size: 1300px, cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 3rem 1rem;
+  min-height: 600px;
+  color: white;
+  border-radius: 0 0 0 130px;
+  font-family: "Overpass", sans-serif;
+}
+
+.header .nav-section {
+  padding: 1rem;
+}
+
+.header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header nav #hamburger-icon {
+  width: 30px;
+  height: 20px;
+}
+
+.header .nav-menu {
+  display: none;
+}
+
+.header h1 {
+  margin: 5rem 0 1rem 0;
+  font-size: 2.1rem;
+}
+
+.header p {
+  font-size: 1.1rem;
+}
+
+.header .nav-section-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 300px;
+  margin: 4rem auto;
+}
+
+.header .start-btn {
+  background-color: white;
+  color: #ff525d;
+  font-weight: 700;
+}
+
+.header .learn-btn {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+.section {
+  text-align: center;
+  padding: 5rem 1rem;
+  font-family: "Overpass", sans-serif;
+}
+
+.section img {
+  width: 100%;
+}
+
+.section h2 {
+  margin-bottom: 2rem;
+}
+
+.section p {
+  padding: 0 2rem;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.section-2 {
+  margin-top: 40%;
+  background-image: url(../images/bg-pattern-circles.svg), -webkit-linear-gradient(135deg, #2c2d3f, #3f4164);
+  background-position: center -200px, 0 0;
+  background-size: 500px, cover;
+  background-repeat: no-repeat;
+  border-radius: 0 130px 0 130px;
+  position: relative;
+}
+
+.section-2 #phone-img {
+  position: absolute;
+  max-width: 500px;
+  top: -200px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.section-2 div {
+  margin-top: 40%;
+  padding-bottom: 20%;
+  color: white;
+}
+
+footer {
+  background-color: #25252d;
+  border-top-right-radius: 130px;
+  text-align: center;
+  color: #c8c8cb;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+}
+
+footer img {
+  margin: 3.5rem 0 2rem;
+}
+
+footer .footer-section {
+  margin: 2rem 0;
+}
+
+footer .footer-header {
+  color: white;
+  margin: 1rem 0;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+footer .attribution a {
+  font-size: 11px;
+  color: #f2f2f2;
+}
+/*# sourceMappingURL=main.css.map */

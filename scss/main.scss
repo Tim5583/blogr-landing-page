@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+@import "globals";
+
+.logo {
+    width: 70px;
+}
+
+.btn {
+    padding: .8em 1em;
+    border-radius: 25px;
+    border: none;
+    width: 140px;
+}
+
+.header {
+    background-image: url(../images/bg-pattern-intro-mobile.svg) ,-moz-linear-gradient(-30deg, $Very-light-red, $Light-red);
+    background-image: url(../images/bg-pattern-intro-mobile.svg) ,-webkit-linear-gradient(-30deg, $Very-light-red, $Light-red);
+    background-position: 30% 30% , 0 0;
+    background-size: 1300px, cover;
+    background-repeat: no-repeat;
+    // background-size: cover;
+    text-align: center;
+    padding: 3rem 1rem;
+    min-height: 600px;
+    color: $White-text;
+    border-radius: 0 0 0 130px;
+
+    .nav-section {
+        padding: 1rem;
+    }
+
+    font: {
+        family: $overpass;
+    }
+
+    nav { 
+        display: flex;
+        justify-content: space-between;
+
+        #hamburger-icon {
+            width: 30px;
+            height: 20px;
+        }
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    h1 {
+        // padding: 10rem 0 2rem 0;
+        margin: 5rem 0 1rem 0;
+        font-size: 2.1rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .nav-section-btns {
+        display: flex;
+        justify-content: space-around;
+        max-width: 300px;
+        margin: 4rem auto;
+    }
+
+    .start-btn {
+        background-color: white;
+        color: $Light-red-CTA-text;
+        font-weight: 700;
+    }
+
+    .learn-btn {
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+    }
+
+}
+
+.section {
+    text-align: center;
+    padding: 5rem 1rem;
+    font-family: $overpass;
+
+    img {
+        width: 100%;
+    }
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    p {
+        padding: 0 2rem;
+    }
+}
+
+.w-70 {
+    width: 70%;;
+}
+
+.section-2 {
+    margin-top: 40%;
+    background-image: url(../images/big-pattern-circles.svg) ,-moz-linear-gradient(135deg, $Very-dark-gray-blue, $Very-dark-desaturated-blue);
+    background-image: url(../images/bg-pattern-circles.svg) ,-webkit-linear-gradient(135deg, $Very-dark-gray-blue, $Very-dark-desaturated-blue);
+    background-position: center -200px, 0 0;
+    background-size: 500px, cover;
+    background-repeat: no-repeat;
+    border-radius: 0 130px 0 130px;
+    position: relative;
+
+    #phone-img {
+        position: absolute;
+        max-width: 500px;
+        top: -200px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    div {
+        margin-top: 40%;
+        padding-bottom: 20%;
+        color: $White-text;
+    }
+}
+
+footer {
+    background-color: $Very-dark-black-blue-footer-background;
+    border-top-right-radius: 130px;
+    text-align: center;
+    color: $Grayish-blue-footer-text;
+    font-family: $ubuntu;
+    font-size: 1.2rem;
+
+    img {
+        margin: 3.5rem 0 2rem;
+    }
+
+    .footer-section {
+        margin: 2rem 0;
+    }
+
+    .footer-header {
+        color: $White-text;
+        margin: 1rem 0;
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+    .attribution a {
+        font-size: 11px;
+        color: hsl(0, 0%, 95%);
+      }      
+}
