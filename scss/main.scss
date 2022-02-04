@@ -15,9 +15,14 @@
     border-radius: 25px;
     border: none;
     width: 140px;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .header {
+    position: relative;
     background-image: url(../images/bg-pattern-intro-mobile.svg) ,-moz-linear-gradient(-30deg, $Very-light-red, $Light-red);
     background-image: url(../images/bg-pattern-intro-mobile.svg) ,-webkit-linear-gradient(-30deg, $Very-light-red, $Light-red);
     background-position: 30% 30% , 0 0;
@@ -75,10 +80,9 @@
         font-weight: 700;
     }
 
-    .start-btn:hover {
+    .start-btn:hover, .sign-btn:hover {
         background-color: $Very-light-red-CTA-hover-background;
         color: $White-text;
-        cursor: pointer;
     }
 
     .learn-btn {
@@ -91,7 +95,6 @@
         background-color: $White-text;
         color: $Very-light-red-CTA-hover-background;
         font-weight: 600;
-        cursor: pointer;
     }
 
 }
@@ -193,6 +196,65 @@ footer {
 }
 
 @media (min-width: 992px) {
+
+    .header {
+        @include maxWidth();
+        background-image: url(../images/bg-pattern-intro-desktop.svg) ,-moz-linear-gradient(-30deg, $Very-light-red, $Light-red);
+        background-image: url(../images/bg-pattern-intro-desktop.svg) ,-webkit-linear-gradient(-30deg, $Very-light-red, $Light-red);
+        background-position: 35% 55% , 0 0;
+        background-size: 2000px, cover;
+        background-repeat: no-repeat;
+        #hamburger-icon, .close-icon {
+            display: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .logo {
+            align-self: flex-start;
+        }
+
+        .drop-items {
+            position: absolute;
+            display: none;
+        }
+
+        .nav-devider {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .nav {
+            margin-left: 2rem;
+            &:hover {
+                // border-bottom: 2px solid white;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            &::after {
+                content: url(../images/icon-arrow-light.svg);
+                padding-left: .5rem;
+            }
+        }
+
+        nav {
+            padding: 0 6rem;
+        }
+
+        .sign-btn {
+            background-color: $White-text;
+            color: $Light-red-CTA-text;
+            font-weight: 600;
+            margin-left: 2rem;
+        }
+
+    }
 
     .sub-section {
         max-width: 1200px;

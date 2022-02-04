@@ -37,7 +37,12 @@ p {
   width: 140px;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
 .header {
+  position: relative;
   background-image: url(../images/bg-pattern-intro-mobile.svg), -webkit-linear-gradient(-30deg, #ff8f70, #ff3d54);
   background-position: 30% 30% , 0 0;
   background-size: 1300px, cover;
@@ -97,10 +102,9 @@ p {
   font-weight: 700;
 }
 
-.header .start-btn:hover {
+.header .start-btn:hover, .header .sign-btn:hover {
   background-color: #ff7a85;
   color: white;
-  cursor: pointer;
 }
 
 .header .learn-btn {
@@ -113,7 +117,6 @@ p {
   background-color: white;
   color: #ff7a85;
   font-weight: 600;
-  cursor: pointer;
 }
 
 .section {
@@ -216,6 +219,64 @@ footer .attribution a {
 }
 
 @media (min-width: 992px) {
+  .header {
+    max-width: 1280px;
+    margin: auto;
+    background-image: url(../images/bg-pattern-intro-desktop.svg), -webkit-linear-gradient(-30deg, #ff8f70, #ff3d54);
+    background-position: 35% 55% , 0 0;
+    background-size: 2000px, cover;
+    background-repeat: no-repeat;
+  }
+  .header #hamburger-icon, .header .close-icon {
+    display: none;
+  }
+  .header .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .logo {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .header .drop-items {
+    position: absolute;
+    display: none;
+  }
+  .header .nav-devider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .nav {
+    margin-left: 2rem;
+  }
+  .header .nav:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .header .nav::after {
+    content: url(../images/icon-arrow-light.svg);
+    padding-left: .5rem;
+  }
+  .header nav {
+    padding: 0 6rem;
+  }
+  .header .sign-btn {
+    background-color: white;
+    color: #ff525d;
+    font-weight: 600;
+    margin-left: 2rem;
+  }
   .sub-section {
     max-width: 1200px;
     display: -ms-grid;
