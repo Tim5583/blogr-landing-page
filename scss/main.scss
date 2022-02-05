@@ -214,11 +214,16 @@ footer {
             & .drop-items {
                 display: none;
                 color: $Very-dark-desaturated-blue;
-                padding: 1rem 0;
+                padding: 2rem 0;
+                color: rgb(119, 119, 119);
                 border-radius: 5px;
                 font-weight: 700;
                 & p {
                     margin-bottom: .5rem;
+
+                    & a:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
     
@@ -229,10 +234,16 @@ footer {
                 &::after {
                     content: url(../images/icon-arrow-dark.svg);
                     padding-left: .5rem;
+                    display: inline-block;
+                }
+
+                &:hover::after {
+                    padding-right: .5rem;
+                    transform: rotate(180deg);
                 }
             }
 
-            .drop3 {
+            .show-drop-mb {
                 display: block;
                 background-color: rgb(232, 232, 232);
             }
@@ -296,7 +307,7 @@ footer {
 
         .drop-items {
             position: absolute;
-            width: 120px;
+            width: 200px;
             display: none;
             background-color: white;
             padding: 1rem;

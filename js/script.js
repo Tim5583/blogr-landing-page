@@ -13,6 +13,7 @@ for (let i = 0; i < dropItems.length; i++) {
             btn = e.target.textContent;
         }
         e.target.nextElementSibling.classList.toggle("show-drop-items");
+        e.target.nextElementSibling.classList.toggle("show-drop-mb")
     })
 }
 

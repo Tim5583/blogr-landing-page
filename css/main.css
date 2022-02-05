@@ -236,12 +236,16 @@ footer .attribution a {
   .header .nav-menu .drop-items {
     display: none;
     color: #3f4164;
-    padding: 1rem 0;
+    padding: 2rem 0;
+    color: #777777;
     border-radius: 5px;
     font-weight: 700;
   }
   .header .nav-menu .drop-items p {
     margin-bottom: .5rem;
+  }
+  .header .nav-menu .drop-items p a:hover {
+    text-decoration: underline;
   }
   .header .nav-menu .drop-title {
     font-weight: 600;
@@ -250,8 +254,14 @@ footer .attribution a {
   .header .nav-menu .drop-title::after {
     content: url(../images/icon-arrow-dark.svg);
     padding-left: .5rem;
+    display: inline-block;
   }
-  .header .nav-menu .drop3 {
+  .header .nav-menu .drop-title:hover::after {
+    padding-right: .5rem;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .header .nav-menu .show-drop-mb {
     display: block;
     background-color: #e8e8e8;
   }
@@ -310,7 +320,7 @@ footer .attribution a {
   }
   .header .drop-items {
     position: absolute;
-    width: 120px;
+    width: 200px;
     display: none;
     background-color: white;
     padding: 1rem;
