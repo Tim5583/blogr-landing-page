@@ -235,9 +235,25 @@ footer .attribution a {
   }
   .header .nav-menu .drop-items {
     display: none;
+    color: #3f4164;
+    padding: 1rem 0;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+  .header .nav-menu .drop-items p {
+    margin-bottom: .5rem;
   }
   .header .nav-menu .drop-title {
     font-weight: 600;
+    font-size: 1.2rem;
+  }
+  .header .nav-menu .drop-title::after {
+    content: url(../images/icon-arrow-dark.svg);
+    padding-left: .5rem;
+  }
+  .header .nav-menu .drop3 {
+    display: block;
+    background-color: #e8e8e8;
   }
   .header .nav-menu .nav {
     margin: 1rem 0;
@@ -364,6 +380,7 @@ footer .attribution a {
   .sub-section-main {
     max-width: 1440px;
     margin: auto;
+    max-width: 1200px;
     position: relative;
     display: -ms-grid;
     display: grid;

@@ -213,10 +213,28 @@ footer {
 
             & .drop-items {
                 display: none;
+                color: $Very-dark-desaturated-blue;
+                padding: 1rem 0;
+                border-radius: 5px;
+                font-weight: 700;
+                & p {
+                    margin-bottom: .5rem;
+                }
             }
     
             & .drop-title {
                 font-weight: 600;
+                font-size: 1.2rem;
+
+                &::after {
+                    content: url(../images/icon-arrow-dark.svg);
+                    padding-left: .5rem;
+                }
+            }
+
+            .drop3 {
+                display: block;
+                background-color: rgb(232, 232, 232);
             }
     
             .nav {
@@ -355,6 +373,7 @@ footer {
 
     .sub-section-main {
         @include maxWidth();
+        max-width: 1200px;
         position: relative;
         display: grid;
         grid-template-areas: 'not-img img';
