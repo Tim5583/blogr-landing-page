@@ -10,6 +10,10 @@
     width: 70px;
 }
 
+p {
+    line-height: 2;
+}
+
 .btn {
     padding: .8em 1em;
     border-radius: 25px;
@@ -200,6 +204,8 @@ footer {
       }      
 }
 
+
+// navigation bar for mobile version
 @media (max-width: 992px) {
     .header {
         .nav-menu {
@@ -282,8 +288,11 @@ footer {
     }
 }
 
+// desktop version 
 @media (min-width: 992px) {
-
+    .h3sub {
+        font-size: 2rem;
+    }
     .header {
         @include maxWidth();
         background-image: url(../images/bg-pattern-intro-desktop.svg) ,-moz-linear-gradient(-30deg, $Very-light-red, $Light-red);

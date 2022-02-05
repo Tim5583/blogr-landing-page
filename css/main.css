@@ -30,6 +30,10 @@ p {
   width: 70px;
 }
 
+p {
+  line-height: 2;
+}
+
 .btn {
   padding: .8em 1em;
   border-radius: 25px;
@@ -294,6 +298,9 @@ footer .attribution a {
 }
 
 @media (min-width: 992px) {
+  .h3sub {
+    font-size: 2rem;
+  }
   .header {
     max-width: 1440px;
     margin: auto;
