@@ -2,7 +2,7 @@
 @import "globals";
 
 @mixin maxWidth() {   
-    max-width: 1280px;
+    max-width: 1440px;
     margin: auto;
 }
 
@@ -45,6 +45,7 @@
 
     nav { 
         display: flex;
+        width: 100%;
         justify-content: space-between;
 
         #hamburger-icon {
@@ -55,6 +56,10 @@
 
     .nav-menu {
         display: none;
+    }
+
+    .nav-menu-show {
+        display: block;
     }
 
     h1 {
@@ -195,6 +200,59 @@ footer {
       }      
 }
 
+@media (max-width: 992px) {
+    .header {
+        .nav-menu {
+            position: absolute;
+            top: 7rem;
+            right: 1rem;
+            left: 1rem;
+            padding: 2rem;
+            background-color: rgb(255, 255, 255);
+            color: black;
+
+            & .drop-items {
+                display: none;
+            }
+    
+            & .drop-title {
+                font-weight: 600;
+            }
+    
+            .nav {
+                margin: 1rem 0;
+            }
+    
+            & a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .close-icon {
+                position: absolute;
+                right: 1rem;
+                top: -3rem;
+            }
+
+            .login {
+                font-weight: 700;
+            }
+
+            .btn-devider {
+                border-top: 1px solid rgba(0, 0, 0, 0.453);
+                padding-top: 1rem;
+            }
+
+            .sign-btn {
+                color: white;
+                font-weight: 700;
+                margin-top: 1rem;
+                background-image: linear-gradient(90deg, $Very-light-red, $Light-red);
+            }
+        }
+    }
+}
+
 @media (min-width: 992px) {
 
     .header {
@@ -220,7 +278,25 @@ footer {
 
         .drop-items {
             position: absolute;
+            width: 120px;
             display: none;
+            background-color: white;
+            padding: 1rem;
+            top: 3rem;
+            border-radius: 5px;
+
+            & a {
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    font-weight:600;
+                }
+            }
+        }
+
+        .show-drop-items {
+            display: block;
         }
 
         .nav-devider {
@@ -230,6 +306,7 @@ footer {
         }
 
         .nav {
+            position: relative;
             margin-left: 2rem;
             &:hover {
                 // border-bottom: 2px solid white;
@@ -237,7 +314,7 @@ footer {
                 cursor: pointer;
             }
 
-            &::after {
+            & .drop-title::after {
                 content: url(../images/icon-arrow-light.svg);
                 padding-left: .5rem;
             }
